@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{7A5638D6-148A-E60E-02BB-ED8E11409920}</ProjectGuid>
+    <ProjectGuid>{D01CC9CD-6982-059E-9E65-06F9CAF2AD4F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,21 +61,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\collisions.cs" />
-    <Compile Include="Assets\dam.cs" />
-    <Compile Include="Assets\heathbar.cs" />
-    <Compile Include="Assets\movement.cs" />
+    <Compile Include="Assets\scripts\collisions.cs" />
+    <Compile Include="Assets\scripts\dam.cs" />
+    <Compile Include="Assets\scripts\enemycollision.cs" />
+    <Compile Include="Assets\scripts\enemyscript.cs" />
+    <Compile Include="Assets\scripts\heathbar.cs" />
+    <Compile Include="Assets\scripts\movement.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/github/game tools project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/github/game tools project/gametools_project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/github/game tools project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/github/game tools project/gametools_project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/github/game tools project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/github/game tools project/gametools_project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/github/game tools project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/github/game tools project/gametools_project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
