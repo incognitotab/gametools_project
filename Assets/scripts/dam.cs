@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class dam : MonoBehaviour {
+public class dam : MonoBehaviour
+{
     Animator anim;
-    public int health=100;
+    public int health = 100;
     public Slider healthbar;
     private float time;
     public GameObject enemy;
@@ -20,23 +21,25 @@ public class dam : MonoBehaviour {
         aud = gameObject.GetComponent<AudioSource>();
         anim = gameObject.GetComponent<Animator>();
         vic = enemy.GetComponent<dam>();
-        mat.color = new Color32(0, 0, 0, 255);
+
     }
 
     public void damage()
     {
-        
+
         health -= 10;
+        
         anim.SetBool("gothit", false);
-        cockiness = Random.Range(1,3);
-        mat.color = new Color32((byte)Random.Range(1, 255), (byte)Random.Range(1, 255), (byte)Random.Range(1, 255), 255);
+        cockiness = Random.Range(1, 3);
+
         aud.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
-       
-        if(health == 50)
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (health == 50)
         {
             anim.SetInteger("damage", 50);
             time += 1;
@@ -55,7 +58,7 @@ public class dam : MonoBehaviour {
             anim.SetInteger("damage", 10);
         }
 
-        if (vic.health <= 0 && stillalive==true)
+        if (vic.health <= 0 && stillalive == true)
         {
             if (cockiness == 1)
             {
@@ -68,5 +71,5 @@ public class dam : MonoBehaviour {
             }
         }
         healthbar.value = health;
-	}
+    }
 }
