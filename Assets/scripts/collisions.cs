@@ -6,12 +6,12 @@ public class collisions : MonoBehaviour {
     Animator anim;
     movement move;
     public GameObject enemy;
-	// Use this for initialization
+	// naming all the variables
 	void Start () {
         anim = gameObject.GetComponentInParent<Animator>();
         move = enemy.GetComponent<movement>();
 	}
-
+    //if i am puching it will cause damage
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("fists") && move.leftpunch == true || collision.gameObject.CompareTag("fists") && move.rightpunch == true)

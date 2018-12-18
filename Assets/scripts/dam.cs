@@ -16,6 +16,7 @@ public class dam : MonoBehaviour
     private ColorBlock col;
     private bool stillalive;
     AudioSource aud;
+    //giving values to variables
     private void Start()
     {
         stillalive = true;
@@ -25,7 +26,7 @@ public class dam : MonoBehaviour
         part = enemy.GetComponentInChildren<ParticleSystem>();
 
     }
-
+    //if damage occurs 
     public void damage()
     {
 
@@ -36,7 +37,7 @@ public class dam : MonoBehaviour
         aud.Play();
     }
 
-    // Update is called once per frame
+    //health check list
     void Update()
     {
 

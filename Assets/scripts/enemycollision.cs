@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemycollision : MonoBehaviour {
     Animator anim;
-
+    //ai special collision script so player wont easily win
     private void Start()
     {
         anim=gameObject.GetComponentInParent<Animator>();

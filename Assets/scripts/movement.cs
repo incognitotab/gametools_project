@@ -13,7 +13,7 @@ public class movement : MonoBehaviour {
 	}
 	
 
-
+    //controls for player
     private void FixedUpdate()
     {
        

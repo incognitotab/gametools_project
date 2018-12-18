@@ -67,6 +67,11 @@
     <Compile Include="Assets\scripts\enemyscript.cs" />
     <Compile Include="Assets\scripts\heathbar.cs" />
     <Compile Include="Assets\scripts\movement.cs" />
+    <Compile Include="Assets\scripts\player1movement.cs" />
+    <Compile Include="Assets\scripts\scenechanger.cs" />
+    <Compile Include="Assets\scripts\twoplayercollision.cs" />
+    <Compile Include="Assets\scripts\twoplayercollisiontwo.cs" />
+    <Compile Include="Assets\scripts\twoplayerscripttwo.cs" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>D:/github/game tools project/gametools_project/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>

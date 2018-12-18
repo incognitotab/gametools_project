@@ -11,7 +11,7 @@ public class enemyscript : MonoBehaviour {
         anim = gameObject.GetComponentInParent<Animator>();
 	}
 	
-	// Update is called once per frame
+	//randomiser ai
 	void Update () {
         timer +=  Time.deltaTime;
         randomiser = Random.Range(1, 7);
