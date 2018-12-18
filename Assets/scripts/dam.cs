@@ -10,6 +10,7 @@ public class dam : MonoBehaviour
     private float time;
     public GameObject enemy;
     dam vic;
+    ParticleSystem part;
     private int cockiness;
     public Material mat;
     private ColorBlock col;
@@ -21,6 +22,7 @@ public class dam : MonoBehaviour
         aud = gameObject.GetComponent<AudioSource>();
         anim = gameObject.GetComponent<Animator>();
         vic = enemy.GetComponent<dam>();
+        part = enemy.GetComponentInChildren<ParticleSystem>();
 
     }
 
@@ -28,10 +30,9 @@ public class dam : MonoBehaviour
     {
 
         health -= 10;
-        
+        part.Play();
         anim.SetBool("gothit", false);
         cockiness = Random.Range(1, 3);
-
         aud.Play();
     }
 
